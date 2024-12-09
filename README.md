@@ -62,6 +62,16 @@ Start the server
   php artisan serve
 ```
 
+## API Reference
+All endpoint need {bearer_token} 
+except :
+```http
+  POST /api/register
+```
+```http
+  POST /api/login
+```
+
 #### Register
 
 ```http
