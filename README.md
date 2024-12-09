@@ -1,4 +1,6 @@
+# Pharmacy-API
 
+Pharmacy API menyediakan untuk mengelola informasi terkait apotik. Dengan Pharmacy API, pengguna dapat dengan mudah mengakses, mengelola, dan memperbarui data obat dan kategori obat yang ada dalam sistem.
 ## API Reference
 All endpoint need {bearer_token} 
 except :
@@ -7,6 +9,57 @@ except :
 ```
 ```http
   POST /api/login
+```
+
+## Features
+
+- Autentikasi Pengguna: Pengguna dapat melakukan login, logout, serta registrasi untuk mengakses API.
+- Manajemen Obat: Menambahkan, memperbarui, menampilkan, dan menghapus data obat.
+- Manajemen Kategori Obat: Menambah, memperbarui, menampilkan, dan menghapus kategori obat.
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/rifqiazib/pharmacy-api.git
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  composer install
+```
+
+Setup env File
+
+```bash
+  copy .env.example .env
+```
+
+Generate APP key
+
+```bash
+  php artisan key:generate
+```
+
+Generate JWT key
+
+```bash
+  php artisan jwt:secret
+```
+
+Start the server
+
+```bash
+  php artisan serve
 ```
 
 #### Register
